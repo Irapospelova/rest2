@@ -19,7 +19,7 @@ public class PostmanTest {
 
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Victory Day"))
+                .body("data", equalTo("Today's Victory Day"))
         ;
     }
 
