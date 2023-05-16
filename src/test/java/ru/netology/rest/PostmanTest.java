@@ -11,14 +11,14 @@ public class PostmanTest {
             void shouldReturnCorrectData() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Today's Victory Day") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Today's the Victory Day") // отправляемые данные (заголовки и query можно выставлять аналогично)
 
                 .when()
                 .post("/post")
 
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Today's Victory Day"))
+                .body("data", equalTo("It was the Victory Day"))
         ;
     }
 
